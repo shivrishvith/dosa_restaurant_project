@@ -30,6 +30,5 @@ items.json: Output file detailing menu items, prices, and order counts.
 
 Contributions are welcome. Please fork the repository and submit pull requests for review. For significant changes, open an issue first to discuss what you'd like to change.
 
-
-#more info
+#More info
 Replace `python3 process_orders.py example_orders.json` with the correct command if your setup requires something different. This README provides a clear, concise guide to understanding, setting up, and running your project, suitable for inclusion in your GitHub repository.
