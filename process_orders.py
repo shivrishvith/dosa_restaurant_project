@@ -1,4 +1,5 @@
 import json
+import sys
 
 def read_orders(file_name):
     with open(file_name, 'r') as file:
@@ -11,7 +12,7 @@ def create_customers_json(orders):
         name = order['name']
         customers[phone] = name
     with open('customers.json', 'w') as file:
-        json.dump(customers, file)
+        json.dump(customers, file, indent=4)
 
 def create_items_json(orders):
     items = {}
@@ -24,9 +25,13 @@ def create_items_json(orders):
             else:
                 items[name]['orders'] += 1
     with open('items.json', 'w') as file:
-        json.dump(items, file)
+        json.dump(items, file, indent=4)
 
 if __name__ == '__main__':
-    orders_data = read_orders('example_orders.json')  # Ensure this path is correct
+    if len(sys.argv) < 2:
+        print("Usage: python3 process_orders.py <filename>")
+        sys.exit(1)  # Exit the script if no filename is provided
+    file_name = sys.argv[1]
+    orders_data = read_orders(file_name)
     create_customers_json(orders_data)
     create_items_json(orders_data)
