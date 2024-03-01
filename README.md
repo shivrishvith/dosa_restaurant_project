@@ -9,6 +9,7 @@ Ensure Python 3 is installed on your machine. Clone this repository to your loca
 ### Requirements
 
 - Python 3.x
+- Any editor for the code(I used VSCode)
 
 ### Running the Application
 
