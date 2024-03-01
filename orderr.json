@@ -1,0 +1,18 @@
+[
+    {
+        "timestamp": 1702219784,
+        "name": "Damodhar",
+        "phone": "732-555-5509",
+        "items": [
+            {
+                "name": "Cheese Madurai Masala Dosa",
+                "price": 13.95
+            },
+            {
+                "name": "Onion Chilli Masala Dosa",
+                "price": 11.95
+            }
+        ],
+        "notes": "extra spicy"
+    }
+]
